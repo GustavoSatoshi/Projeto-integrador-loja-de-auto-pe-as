@@ -1,0 +1,8 @@
+# Se a pasta do projeto estiver dentro do htdocs (XAMPP), isto manda
+# tudo para /public e impede acesso direto a .env, src/, database/ etc.
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^$ public/ [L]
+    RewriteRule ^(?!public/)(.*)$ public/$1 [L]
+</IfModule>
+Options -Indexes

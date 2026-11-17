@@ -1,0 +1,8 @@
+.env
+public/uploads/produtos/*
+!public/uploads/produtos/.gitkeep
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!.env.example
